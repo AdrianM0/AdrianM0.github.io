@@ -1328,10 +1328,19 @@ textarea.form-input::-webkit-resizer { display: none; }
    * #SIDEBAR
    */
 
-  .sidebar {
-    max-height: 180px;
-    margin-bottom: 30px;
-  }
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 320px; /* <-- Increased from the original value */
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 15px;
+  z-index: 4;
+  overflow-y: auto;
+}
 
   .sidebar.active { max-height: 584px; }
 
